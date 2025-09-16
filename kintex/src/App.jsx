@@ -42,8 +42,8 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <h3>문의 정보</h3>
-          <p>대표 : 최 린 | 이메일 : lchoi@korea.ac.kr</p>
-          <p>연락처 : 02-2088-2771 | 홈페이지 : <a href="https://fifthdimension.co.kr/">핍스디멘션</a></p>
+          <p>담당자 : 손원준 | EMAIL : swj8905@korea.ac.kr</p>
+          <p>H.P : 010-9551-8905 | 홈페이지 : <a href="https://fifthdimension.co.kr/">핍스디멘션</a></p>
         </div>
       </footer>
     </div>
