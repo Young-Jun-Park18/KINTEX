@@ -3,14 +3,15 @@ import './App.css';
 
 function App() {
   const handleMoreClick = () => {
-    window.open('https://fifthdimension.co.kr/news', '_blank');
+    // SPA 방식이라면 같은 탭에서 이동
+    window.location.href = 'https://fifthdimension.co.kr/news';
   };
 
   return (
     <div className="App">
       {/* 더보기 버튼 */}
       <button className="more-button" onClick={handleMoreClick}>
-        홈페이지로 이동
+        더보기
       </button>
 
       {/* 메인 이미지 */}
@@ -29,6 +30,18 @@ function App() {
       <section className="service-section">
         <h2>홍보 포스터</h2>
         <img src="/images/post.jpg" alt="디지털 트윈 서비스" />
+      </section>
+
+      {/* 오시는 길 */}
+      <section className="map-section">
+        <h2>오시는 길</h2>
+        <img src="/images/map.png" alt="킨텍스 오시는 길" />
+        <button 
+          className="kintex-link-button"
+          onClick={() => window.open('https://www.kintex.com/web/ko/html/company/contact.do', '_blank')}
+        >
+          킨텍스 공식 홈페이지
+        </button>
       </section>
 
       {/* 하단 정보 */}
