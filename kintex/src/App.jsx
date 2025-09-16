@@ -3,15 +3,14 @@ import './App.css';
 
 function App() {
   const handleMoreClick = () => {
-    // SPA 방식이라면 같은 탭에서 이동
-    window.location.href = 'https://fifthdimension.co.kr/news';
+    window.open('https://fifthdimension.co.kr/news', '_blank');
   };
 
   return (
     <div className="App">
       {/* 더보기 버튼 */}
       <button className="more-button" onClick={handleMoreClick}>
-        더보기
+        홈페이지로 이동
       </button>
 
       {/* 메인 이미지 */}
@@ -33,15 +32,10 @@ function App() {
       </section>
 
       {/* 오시는 길 */}
-      <section className="map-section">
+      <section className="service-section">
         <h2>오시는 길</h2>
+        <h3>주소 : (10390) 경기도 고양시 일산서구 킨텍스로 217-60</h3>
         <img src="/images/map.png" alt="킨텍스 오시는 길" />
-        <button 
-          className="kintex-link-button"
-          onClick={() => window.open('https://www.kintex.com/web/ko/html/company/contact.do', '_blank')}
-        >
-          킨텍스 공식 홈페이지
-        </button>
       </section>
 
       {/* 하단 정보 */}
@@ -49,7 +43,7 @@ function App() {
         <div className="footer-content">
           <h3>문의 정보</h3>
           <p>대표 : 최 린 | 이메일 : lchoi@korea.ac.kr</p>
-          <p>연락처 : 02-2088-2771 | 홈페이지 : <a href ="https://fifthdimension.co.kr/">핍스디멘션</a></p>
+          <p>연락처 : 02-2088-2771 | 홈페이지 : <a href="https://fifthdimension.co.kr/">핍스디멘션</a></p>
         </div>
       </footer>
     </div>
